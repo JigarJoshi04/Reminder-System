@@ -1,0 +1,65 @@
+{% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static '/login.css' %}">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Reminder</title>
+
+
+  <body>
+    <header>
+    <div class="wrapper">
+      <span class="color"
+        ><img class="logo" src="{% static '/images/logo.png' %}" alt="logo"
+      /></span>
+
+      <nav>
+        <ul>
+          <li><a href="..">Home</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+        <section class="main">
+          <form class="form" method="post"  action="./">
+            {% csrf_token %} 
+              <article>
+                <p class="sign" align="center">Sign In</p>
+                <input name ="email" class="email "  placeholder="Email">
+                <input name="password" class="pass" type="password"  placeholder="Password">
+                <div class="button"><button type="submit">GET STARTED</button></div>
+                  <p class="forgot" align="center" ><a href="#">Forgot Password?</a></p>
+              </article>
+
+            <d class="vl"> </d>
+           <aside>
+            <p class="createaccount" align="center"><a href="../signup/" class="signup">Create Account</a></p>
+            <p class="google" align="center"><a class="signup"ss>Sign in with Google</a></p>
+          </aside>
+          </form>
+          </section>
+
+
+
+    <footer>
+      <div class="wrapper">
+        <div id="footer-info">
+          <p>Copyright 2020 Auto-Reminder-System. All rights reserved.</p>
+          <p><a href="#">Terms of Service</a> I <a href="#">Privacy</a></p>
+        </div>
+        <div id="footer-links">
+          <ul>
+            <p><h5>Company</h5></p>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Meet The Team</a></li>
+            <li><a href="#">What We Do</a></li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </footer>
+  </body>
+</html

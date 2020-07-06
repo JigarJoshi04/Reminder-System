@@ -1,0 +1,84 @@
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static '/home.css' %}">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Reminder</title>
+
+<body>
+<header>
+  <div class="wrapper">
+    <span class="color"
+      ><img class="logo" src="{% static '/images/logo.png' %}" alt=""
+    /></span>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="login/">Login</a></li>
+        <li><a href="signup">Sign up</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="hero-image">
+  <div class="wrapper">
+    <h2 class="title">
+      <strong>Never Miss</strong><br />
+      any Reminder.
+    </h2>
+    <a href="#" class="button-1">Get Started</a>
+  </div>
+</div>
+
+<div id="features">
+  <div class="wrapper">
+    <ul>
+      <li class="feature-1">
+        <img class="feature1" src="{% static '/images/feature1.png' %}" alt="" />
+        <h4>Email Reminders</h4>
+      </li>
+      <li class="feature-2">
+        <img class="feature2" src="{% static '/images/feature2.png' %}" alt="" />
+        <h4>Simple To Use</h4>
+      </li>
+      <li class="feature-3">
+        <img class="feature3" src="{% static '/images/feature3.png' %}" alt="" />
+        <h4>Schedule at your fingertips</h4>
+      </li>
+      <div class="clear"></div>
+    </ul>
+  </div>
+</div>
+
+<div id="primary-content">
+  <div class="wrapper">
+    <article>
+      <h3>Featured Content</h3>
+      <p>
+        List of Services to be provided.
+      </p>
+    </article>
+  </div>
+</div>
+
+<footer>
+  <div class="wrapper">
+    <div id="footer-info">
+      <p>Copyright 2020 Auto-Reminder-System. All rights reserved.</p>
+      <p><a href="#">Terms of Service</a> I <a href="#">Privacy</a></p>
+    </div>
+    <div id="footer-links">
+      <ul>
+        <p><h5>Company</h5></p>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Meet The Team</a></li>
+        <li><a href="#">What We Do</a></li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+</footer>
+</body>

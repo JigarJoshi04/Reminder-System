@@ -1,0 +1,77 @@
+{% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static '/signup.css' %}">
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Register</title>
+
+  </head>
+  <body>
+  <header>
+    <div class="wrapper">
+      <span class="color"
+        ><img class="logo" src="{% static '/images/logo.png' %}" alt="logo"
+      /></span>
+
+      <nav>
+        <ul>
+          <li><a href="..">Home</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="heading"><h1>Create an Account</h1></div>
+    <form method="post" action="./">
+      {% csrf_token %} 
+      <div class="form-left">
+        <label for="firstname">First Name</label>
+        <input name = "firstname" type="text" class="firstname" placeholder="First Name" />
+        <label for="lastname">Last Name</label>
+        <input name = "lastname"  type="text" class="lastname" placeholder="Last Name" />
+        <label for="username">Username</label>
+        <input name = "username"  type="text" class="username" placeholder="Username" />
+        <label for="phone">Phone Number</label>
+        <input name = "phone" type="number" class="phone" placeholder="Phone Number" />
+        <label for="email">Email</label>
+        <input name= "email" type="email" class="email" placeholder="Email" />
+      </div>
+      <d class="vl"></d>
+      <div class="form-right">
+        <label for="gst">GST number</label>
+        <input name= "gst" type="text" class="gst" placeholder="GST Number" />
+        <label for="aadhar">Aadhar Card number</label>
+        <input name= "aadhar" type="text" class="aadhar" placeholder="Aadhar Card Number" />
+        <label for="pan">Pan Card number</label>
+        <input name= "pan" type="text" class="pan" placeholder="Pan Card Number" />
+        <label for="password">Password</label>
+        <input name= "password" type="text" class="password" placeholder="Password" />
+        <label for="repass">Re-Password</label>
+        <input name= "repass" type="text" class="repass" placeholder="Re-Password" />
+        <div class="button"><button type="submit">GET STARTED</button></div>
+      </div>
+      
+    </form>
+   
+  </div>
+
+  <footer>
+      <div class="wrapper">
+        <div id="footer-info">
+          <p>Copyright 2020 Auto-Reminder-System. All rights reserved.</p>
+          <p><a href="#">Terms of Service</a> I <a href="#">Privacy</a></p>
+        </div>
+        <div id="footer-links">
+          <ul>
+            <p><h5>Company</h5></p>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Meet The Team</a></li>
+            <li><a href="#">What We Do</a></li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </footer>
+
+</body>
